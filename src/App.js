@@ -5,9 +5,10 @@ import Post from './components/post'
 
 function App() {
   return (
-    <div>
-      <span>Hello world</span>
-    </div>
+    <Router>
+      <Posts path="/" />
+      <Post path="/posts/:id" />
+    </Router>
   );
 }
 
