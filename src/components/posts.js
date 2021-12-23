@@ -7,7 +7,7 @@ const Posts = () => {
   useEffect(() => {
     const getPosts = async () => {
       const resp = await fetch(
-        "http://127.0.0.1:8787/posts"
+        "https://my-worker.1314x3.workers.dev/posts"
       );
       const postsResp = await resp.json();
       setPosts(postsResp);
